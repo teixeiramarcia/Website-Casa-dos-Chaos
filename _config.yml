@@ -1,7 +1,7 @@
 # Site Settings
 title: Casa dos Chãos
 url: 'http://localhost:8080'
-baseurl:
+baseurl: ''
 
 # Tracker
 analytics: #

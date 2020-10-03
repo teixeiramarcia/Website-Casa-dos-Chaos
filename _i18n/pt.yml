@@ -1,0 +1,11 @@
+global:
+  title: Casa dos Chãos
+  about: Sobre
+  booking: Booking
+about:
+  history: História
+footer:
+  rights: Todos os Direitos Reservados
+langs:
+  en: English
+  pt: Português
