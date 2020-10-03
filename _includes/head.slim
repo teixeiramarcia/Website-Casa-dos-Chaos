@@ -1,0 +1,16 @@
+doctype html
+html lang="en"
+  head
+{% include analytics.slim %}
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    link href="/img/logo.png" rel="icon" sizes="32x32" type="image/png" /
+    link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"
+    link rel="stylesheet" href='{{ "/css/main.css" | prepend: site.baseurl_root }}'  type="text/css" /
+    title {{ site.title }}
+  body
+
+{% include navbar.slim %}

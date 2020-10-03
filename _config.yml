@@ -1,0 +1,46 @@
+# Site Settings
+title: Casa dos Chãos
+url: 'http://localhost:8080'
+baseurl:
+
+# Tracker
+analytics: #
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-slim
+  - jemoji
+  - jekyll-multiple-languages-plugin
+
+# Reading Files
+include:
+  - _pages
+exclude:
+  - .gitignore
+  - .editorconfig
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md
+
+# Build settings
+encoding: "utf-8"
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Slim
+slim:
+  pretty: true
+  format: html5
+
+# Website languages
+languages: ["pt", "en"]
+
+exclude_from_localizations: ["_sass", "css", "img"]

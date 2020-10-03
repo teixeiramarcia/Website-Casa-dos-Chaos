@@ -1,0 +1,30 @@
+      script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"
+
+      javascript:
+        $(document).ready(function(){
+          $('.hamburger').click(function(e){
+            $menu = $(this).parent();
+            if(!$(this).hasClass('active')) {
+              $(this).addClass('active');
+              $menu.addClass('open');
+            } else {
+              $(this).removeClass('active');
+              $menu.removeClass('open');
+            }
+            e.preventDefault();
+          });
+        });
+
+      javascript:
+        document.addEventListener( 'DOMContentLoaded', function () {
+          new Splide( '#image-slider', {
+            cover: true,
+            focus: 'center',
+            height: '25%',
+            perMove: 1,
+            perPage: 3,
+            type: 'loop',
+          } ).mount();
+        } );
