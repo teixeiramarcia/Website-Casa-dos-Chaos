@@ -10,7 +10,20 @@
         .item
           a.ui.icon href="/about"
             i.instagram.icon.inverted.large
-            span.u-link.color-1 Sobre
+            span.u-link.color-1 {% t global.about %}
+
+        .item
+          {% if site.lang == "pt" %}
+            {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
+            a.ui.icon href="{{ link1 }}"
+              i.instagram.icon.inverted.large
+              span.u-link.color-1 {% t langs.en %}
+          {% elsif site.lang == "en" %}
+            {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+            a.ui.icon href="{{ link2 }}"
+              i.instagram.icon.inverted.large
+              span.u-link.color-1 {% t langs.pt %}
+          {% endif %}
       .hamburger
         span.hamburger-bun
         span.hamburger-patty

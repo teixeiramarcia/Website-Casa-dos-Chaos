@@ -10,7 +10,7 @@ html lang="en"
     link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
     link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"
     link rel="stylesheet" href='{{ "/css/main.css" | prepend: site.baseurl_root }}'  type="text/css" /
-    title {{ site.title }}
+    title {% t global.title %}
   body
 
 {% include navbar.slim %}
