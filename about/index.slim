@@ -2,30 +2,8 @@
 ---
 {% include head.slim %}
     .ui.container.texto
-      h1.color-4.history História
-      p.color-6
-        |
-          Nam gravida sollicitudin nibh, sed sodales leo aliquet vel. Nullam nec ipsum bibendum, aliquet velit et, ullamcorper nibh.
-          Cras mattis erat tellus, nec tempus tellus feugiat ut. Curabitur iaculis ultricies ligula sit amet ullamcorper.
-          Praesent id erat viverra, luctus magna vel, consectetur tellus. Duis ligula ligula, volutpat id diam efficitur, placerat lobortis eros.
-          Sed sed porttitor purus, nec maximus nulla.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor cursus quam id luctus.
-          Vivamus faucibus magna felis, vitae convallis nunc bibendum et. Donec accumsan, risus non elementum blandit,
-          ligula purus hendrerit nulla, at fermentum est nulla sit amet metus. Sed volutpat sit amet arcu eget aliquam.
-          Integer tempor dapibus tristique. Maecenas tempus molestie urna, nec fermentum est varius ultrices. Nam tristique accumsan scelerisque.
-          Nullam euismod urna ligula, sed fringilla mauris blandit a. Curabitur ut scelerisque risus. Nam eu est eu lectus accumsan efficitur eu vitae orci.
-          In vel tempor enim. Quisque luctus bibendum nibh vitae facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Ut cursus neque ipsum, vel molestie lectus eleifend at. Praesent aliquet eros erat, at consequat purus sodales in.
-          Maecenas eu elementum lorem, ac dapibus libero.
-          Ut sollicitudin vitae erat sed semper. Duis rutrum pulvinar dolor, at fermentum tortor vehicula consequat. Nulla facilisi.
-          Nam ut augue quis massa sodales mattis id quis mauris. Cras finibus lacus non porttitor ullamcorper.
-          Aenean ultricies nulla elit, in tristique mi euismod sit amet. Quisque id tempus purus, volutpat ultrices arcu.
-          Fusce augue felis, vestibulum nec fermentum aliquet, lobortis hendrerit dui. Etiam dignissim vestibulum egestas.
-          In scelerisque dapibus mollis. Etiam luctus dignissim dapibus. Nulla ante urna, sollicitudin ac eros quis, feugiat malesuada tellus.
-          Phasellus tincidunt, enim quis tempus cursus, velit nunc sollicitudin turpis, dictum sagittis nibh mauris non nulla.
-          In hac habitasse platea dictumst. Aliquam id aliquet metus, quis volutpat risus. Vivamus ultrices lectus sapien,
-          in elementum nulla vehicula ornare. Nam lobortis massa urna, quis rhoncus urna posuere sed. Suspendisse potenti.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam sagittis orci rutrum metus aliquam,
-          sit amet ultrices ligula posuere. Nullam sed vehicula mi, non vulputate eros.
-      
+      h1.color-4.history {% t about.history %}
+
+      {% tf about/about.slim %}
+
 {% include footer.slim %}
